@@ -17,9 +17,15 @@
   "commands": [
     {
       "name": "index",
-      "title": "New Instance",
+      "title": "Open New App Instance",
       "description": "Select an installed application and launch a new instance of it",
       "mode": "view"
+    },
+    {
+      "name": "current",
+      "title": "New Instance",
+      "description": "Launch a new instance of the currently active application",
+      "mode": "no-view"
     }
   ],
   "dependencies": {
