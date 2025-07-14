@@ -4,12 +4,16 @@
   "title": "New Instance",
   "description": "Launch a new instance of any installed application on your Mac",
   "icon": "icon.png",
-  "author": "caramel",
+  "author": "Caramel <git@caramelfur.dev>",
   "categories": [
     "Applications",
     "Productivity"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:CaramelFur/Raycast-New-Instance.git"
+  },
   "commands": [
     {
       "name": "index",
