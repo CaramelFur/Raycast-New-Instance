@@ -1,4 +1,4 @@
-import { showToast, Toast, closeMainWindow, Application } from '@raycast/api';
+import { Application, closeMainWindow, showToast, Toast } from '@raycast/api';
 import { exec } from 'child_process';
 import { promisify } from 'util';
 
@@ -28,11 +28,3 @@ export async function launchNewInstance(application: Application) {
     });
   }
 }
-
-export async function showFailureToast(title: string, message?: string) {
-  await showToast({
-    style: Toast.Style.Failure,
-    title,
-    message,
-  });
-} 

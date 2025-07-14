@@ -4,16 +4,16 @@ A Raycast extension that allows you to launch a new instance of any installed ap
 
 ## Commands
 
+### New Instance
+1. Open Raycast
+2. Type "New Instance"
+3. Press Enter to immediately launch a new instance of the currently active application
+
 ### Open New App Instance
 1. Open Raycast
 2. Type "Open New App Instance" 
 3. Search for the application you want to launch
 4. Press Enter to launch a new instance
-
-### New Instance
-1. Open Raycast
-2. Type "New Instance"
-3. Press Enter to immediately launch a new instance of the currently active application
 
 ## Use Cases
 

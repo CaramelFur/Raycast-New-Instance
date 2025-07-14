@@ -1,6 +1,6 @@
-import { Action, ActionPanel, getApplications, Icon, List, Application } from '@raycast/api';
+import { Action, ActionPanel, getApplications, Icon, List } from '@raycast/api';
 import { usePromise } from '@raycast/utils';
-import { launchNewInstance, showFailureToast } from './utils';
+import { launchNewInstance } from './utils';
 
 export default function Command() {
   const { data: applications, isLoading, error } = usePromise(getApplications);
