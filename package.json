@@ -3,6 +3,7 @@
   "name": "new-instance",
   "title": "New Instance",
   "description": "Launch a new instance of any installed application on your Mac",
+  "icon": "icon.png",
   "author": "caramel",
   "categories": [
     "Applications",
