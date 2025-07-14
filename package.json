@@ -1,0 +1,35 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "new-instance",
+  "title": "New Instance",
+  "description": "Launch a new instance of any installed application on your Mac",
+  "author": "caramel",
+  "categories": [
+    "Applications",
+    "Productivity"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "New Instance",
+      "description": "Select an installed application and launch a new instance of it",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.100.3",
+    "@raycast/utils": "2.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.0.13",
+    "@types/react": "^19.0.10",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "prepublishOnly": "echo \"\\n\\nIt seems like you are trying to publish the Raycast extension to npm.\\n\\nIf you did intend to publish it to npm, remove the \\`prepublishOnly\\` script and rerun \\`npm publish\\` again.\\nIf you wanted to publish it to the Raycast Store instead, use \\`npm run publish\\` instead.\\n\\n\" && exit 1",
+    "publish": "npx @raycast/api@latest publish"
+  }
+} 
