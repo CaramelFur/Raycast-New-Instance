@@ -1,6 +1,6 @@
-import { Application, closeMainWindow, showToast, Toast } from '@raycast/api';
-import { exec } from 'child_process';
-import { promisify } from 'util';
+import { Application, closeMainWindow, showToast, Toast } from "@raycast/api";
+import { exec } from "child_process";
+import { promisify } from "util";
 
 export const execAsync = promisify(exec);
 
@@ -23,8 +23,8 @@ export async function launchNewInstance(application: Application) {
   } catch (error) {
     await showToast({
       style: Toast.Style.Failure,
-      title: 'Failed to launch application',
-      message: error instanceof Error ? error.message : 'Unknown error occurred',
+      title: "Failed to launch application",
+      message: error instanceof Error ? error.message : "Unknown error occurred",
     });
   }
 }

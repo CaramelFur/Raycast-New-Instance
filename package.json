@@ -4,7 +4,7 @@
   "title": "New Instance",
   "description": "Launch a new instance of any installed application on your Mac",
   "icon": "icon.png",
-  "author": "Caramel <git@caramelfur.dev>",
+  "author": "Caramel",
   "categories": [
     "Applications",
     "Productivity"
@@ -33,14 +33,21 @@
     "@raycast/utils": "2.2.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.31.0",
     "@types/node": "24.0.13",
     "@types/react": "^19.0.10",
+    "@typescript-eslint/eslint-plugin": "^8.37.0",
+    "@typescript-eslint/parser": "^8.37.0",
+    "eslint": "^9.31.0",
+    "prettier": "^3.6.2",
     "typescript": "^5.8.3"
   },
   "scripts": {
     "build": "ray build -e dist",
     "dev": "ray develop",
+    "lint": "ray lint",
+    "lint:fix": "ray lint --fix",
     "prepublishOnly": "echo \"\\n\\nIt seems like you are trying to publish the Raycast extension to npm.\\n\\nIf you did intend to publish it to npm, remove the \\`prepublishOnly\\` script and rerun \\`npm publish\\` again.\\nIf you wanted to publish it to the Raycast Store instead, use \\`npm run publish\\` instead.\\n\\n\" && exit 1",
     "publish": "npx @raycast/api@latest publish"
   }
-} 
+}
